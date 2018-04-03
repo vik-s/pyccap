@@ -1,0 +1,5 @@
+pyccap.egg-info/PKG-INFO
+pyccap.egg-info/SOURCES.txt
+pyccap.egg-info/dependency_links.txt
+pyccap.egg-info/requires.txt
+pyccap.egg-info/top_level.txt

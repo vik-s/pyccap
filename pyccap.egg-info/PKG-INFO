@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyccap
+Version: 0.1
+Summary: Open source project to emulate the functionality of Keysight's ICCAP device modeling software.
+Home-page: http://github.com/vik-s/pyccap
+Author: Vikram Sekar
+Author-email: vikram.mail@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: electronics instrument gpib semiconductor device
+Platform: UNKNOWN
