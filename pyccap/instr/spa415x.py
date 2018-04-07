@@ -363,16 +363,14 @@ class spa415x():
         """
         Disables an analyzer channel
 
-        Unused channels must be disabled before measurement to avoid
-        name clashes.
-
         Parameters
         ----------
-        ch : int
-            Integer identifying measurement channel on Analyzer
+        ch : str
+            String identifying channel on Analyzer
+            Allowed inputs : smu1 | smu2 | smu3 | smu4 | vsu1 | vsu2 | vmu1 | vmu2
 
         """
-        io.write(self, ':PAGE:CHANnels:SMU'+str(ch)+':DISable')
+        io.write(self, ':PAGE:CHANnels:'+ch+':DISable')
 
     def time(delay=0, hold=0, integ='short'):
         """
