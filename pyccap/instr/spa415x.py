@@ -30,10 +30,7 @@ class spa415x():
 
         >>> dc = pyccap.instr.spa415x('GPIB0::25::INSTR')
         """
-        rm = pyvisa.ResourceManager()
-        self.pyvisa = rm.open_resource(visa_name)
-        self.pyvisa.timeout = None
-        self.pyvisa.read_termination = '\n'
+        io.initialize(self, visa_name)
 
     @property
     def mode(self):
@@ -51,8 +48,7 @@ class spa415x():
         >>> dc.mode
         'SWE'
         """
-        getopmode = io.query(self, ':PAGE:CHANnels:MODE?')
-        return getopmode.rstrip()
+        return io.query(self, ':PAGE:CHANnels:MODE?')
 
     @mode.setter
     def mode(self, mode):
