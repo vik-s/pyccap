@@ -31,6 +31,7 @@ class spa415x():
         >>> dc = pyccap.instr.spa415x('GPIB0::25::INSTR')
         """
         io.initialize(self, visa_name)
+        self.init()
 
     @property
     def mode(self):
