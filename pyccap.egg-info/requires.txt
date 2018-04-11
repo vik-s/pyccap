@@ -1,4 +1,0 @@
-numpy
-matplotlib
-pyvisa
-scikit-rf
